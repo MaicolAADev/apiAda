@@ -1,0 +1,129 @@
+{
+	"info": {
+		"_postman_id": "2e7ef4d3-4048-4ac4-a08f-8d186efea644",
+		"name": "ADA",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29370226",
+		"_collection_link": "https://jdm222.postman.co/workspace/JDM~d81a1810-d371-4198-a7be-fe8f7a352102/collection/29370226-2e7ef4d3-4048-4ac4-a08f-8d186efea644?action=share&source=collection_link&creator=29370226"
+	},
+	"item": [
+		{
+			"name": "company",
+			"item": [
+				{
+					"name": "index",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}api/company",
+							"host": [
+								"{{URL}}api"
+							],
+							"path": [
+								"company"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}api/company/1",
+							"host": [
+								"{{URL}}api"
+							],
+							"path": [
+								"company",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}api/company/3",
+							"host": [
+								"{{URL}}api"
+							],
+							"path": [
+								"company",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "store",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"codeCompany\": \"COMPANIA001\",\r\n  \"nameCompany\": \"TEST01\",\r\n  \"descriptionCompany\": \"Compañía ejemplo\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}api/company",
+							"host": [
+								"{{URL}}api"
+							],
+							"path": [
+								"company"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"codeCompany\": \"COMPANIA003\",\r\n  \"nameCompany\": \"TEST03\",\r\n  \"descriptionCompany\": \"Compañía ejemplo 3\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}api/company/3",
+							"host": [
+								"{{URL}}api"
+							],
+							"path": [
+								"company",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "URL",
+			"value": "",
+			"type": "default"
+		}
+	]
+}
